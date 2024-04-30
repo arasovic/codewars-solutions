@@ -1,5 +1,5 @@
 // (kadane's algorithm)
-function maxSequence1(arr) {
+function maxSequence(arr) {
   let maxSum = 0;
   let currentSum = 0;
   for (const element of arr) {
@@ -8,3 +8,7 @@ function maxSequence1(arr) {
   }
   return maxSum;
 }
+
+console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // 6
+console.log(maxSequence([-2, -1, -3, -4, -1, -2, -1, -5, -4])); // 0
+console.log(maxSequence([-2, -1, -3, -4, -1, -2, -1, -5, 4])); // 4
