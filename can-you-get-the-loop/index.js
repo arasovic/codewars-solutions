@@ -1,4 +1,4 @@
-// Solution 1 (O(nxn) time complexity):
+// Solution 1 (O(n) time complexity):
 function loop_size(node) {
   let nodes = [];
   let currentNode = node;
@@ -9,8 +9,8 @@ function loop_size(node) {
   return nodes.length - nodes.indexOf(currentNode);
 }
 
-// Solution 2 (O(n) time complexity):
-function loop_size_On(node) {
+// Solution 2 (O(n) time complexity with Floyd's cycle-finding algorithm):
+function loop_size_floyd(node) {
   let slow = node;
   let fast = node;
   let loopDetected = false;
