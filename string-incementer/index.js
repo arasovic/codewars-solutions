@@ -1,4 +1,4 @@
-const str = "fo99obar9";
+const str = "fo99obar009";
 
 function incrementString(strng) {
   const match = strng.match(/(\d+)$/);
@@ -17,4 +17,4 @@ function incrementString(strng) {
   // return the string with the new number
 }
 
-console.log(incrementString(str)); // fo99obar100
+console.log(incrementString(str)); // fo99obar010
